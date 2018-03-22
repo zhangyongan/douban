@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>豆瓣(手机版)</title>
+	<link rel="stylesheet" href="./css/index.css">
+	<meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+	<script src="./js/vue.js"></script>
+</head>
+<body>
+
+<div class="login-wrapper">
+	<h1><a href="javascript:history.go(-1);">取消</a>登录豆瓣</h1>
+	<div class="mobile-accounts">
+		<form method="post" action="">
+			<div class="form-element form-element-first">
+				<strong>帐号</strong>
+				<input type="text" name="form_email" placeholder="邮箱 / 手机号 / 用户名" value="">
+			</div>
+			<div class="form-element form-pwd">
+				<strong>请输入密码</strong>
+				<input type="password" name="form_password" id="form_password" placeholder="密码">
+				<span class="openpwd"></span>
+			</div>
+			<div class="form-element submit-button">
+				<input class="btn-submit" type="submit" value="登录">
+			</div>
+		</form>
+		
+		<div class="more-login">
+			<div class="more-login-btn">使用其他方式登录 &amp; 找回密码</div>
+
+			<div class="btn-wrapper">
+				<a class="btn reg-btn" href="https://accounts.douban.com/register?redir=https%3A//m.douban.com/">
+					注册豆瓣帐号
+				</a>
+				<a class="btn open-app">下载豆瓣App</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>

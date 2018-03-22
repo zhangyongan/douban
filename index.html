@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>豆瓣(手机版)</title>
+	<link rel="stylesheet" href="./css/index.css">
+	<meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+	<script src="./js/vue.js"></script>
+</head>
+<body>
+	<div class="topnav">
+		<div class="topnav-primary">
+			<a href="./index.html">
+				<h1>豆瓣</h1>
+			</a>
+			<nav>
+				<ul>
+					<li><a style="color:#2384E8;" href="">电影</a></li>
+					<li><a style="color:#9F7860;" href="">图书</a></li>
+					<li><a style="color:#E4A813;" href="">广播</a></li>
+					<li><a style="color:#2AB8CC;" href="./group.html">小组</a></li>
+				</ul>
+				<span></span>
+			</nav>
+		</div>
+	</div>
+	
+	<div id="page">
+		<nav>
+			<a href="">影院热映</a>
+			<a href="">租房找室友</a>
+			<a href="">豆瓣时间</a>
+			<a href="">使用豆瓣App</a>
+		</nav>
+		<div id="section">
+			<a href="" v-for="item in article">
+				<div class="section-summary">
+					<template v-if="item.image">
+						<div style="width: 70%;">
+							<h3>{{item.title}}</h3>
+							<p>{{item.summary}}</p>
+						</div>
+					</template>
+					<template v-else>
+						<div style="width: 100%;">
+							<h3>{{item.title}}</h3>
+							<p>{{item.summary}}</p>
+						</div>
+					</template>
+					<div v-if="item.image" class="section-img" v-bind:style="{background:'url('+item.image+')',backgroundRepeat:'no-repeat',backgroundSize:'cover'}"></div>
+				</div>
+				<div class="section-author">
+					<span>by {{item.by}}</span>
+					<span v-if="item.from">来自栏目 {{item.from}}</span>
+				</div>
+			</a>
+		</div>
+	</div>
+
+
+	<script>
+	var page = new Vue({
+		el:"#page",
+		data:{
+			article:[
+				{title:"一周豆瓣热门图书|这群\"乡下人\"的爱与忠诚",summary:"五月第二周，J.D. 万斯《乡下人的悲歌》记述了美国蓝领阶层向上流动的苦难与挣扎；布克奖得主马龙·詹姆斯的《七杀简史》将一个真实的枪杀事件借由76个虚构角色之口重现，揭露了一个时代隐秘的罪恶与暴力；豆瓣红人半岛璞《如何让女人免于心碎》讲述16个关于欲望、孤独和奇迹的都市爱情故事。",image:"./images/呆滞黄人.png",by:"豆瓣读书",from:"一周热门图书"},
+				{title:"广播精选｜遇到一个重度社恐送餐员",summary:"昨晚我骑车回家，我神经兮兮的骑着自行车突然唱歌，唱到一半发现旁边有和声……",image:"",by:"豆瓣",from:"广播精选"},
+				{title:"视频精选 | 有几年，就是会把全部时间和力气都用来谈恋爱",summary:"反省“爱得太用力”的人都老了",image:"./images/file-1494326038.jpg",by:"豆瓣",from:"视频精选"},
+				{title:"自我研习所 | 彼此讨厌又互相欣赏，这样的友情是什么？",summary:"“友敌”是最令我们紧张的人，但也是鞭策我们进步的人。",image:"./images/file-1494320459.jpg",by:"豆瓣",from:"自我研习所"},
+				{title:"老戏骨以《人民的名义》告诉你，什么才叫狂飙突进的演技",summary:"真金不怕红炉火，老马出山全盘胜。  最近在湖南卫视热播的电视剧《人民的名义》，阵容太吓人了。一帮老戏骨，终于又摩拳擦掌地集体打马上阵了。这些老人儿，在这出“官场现形记”里，眼角眉梢全是戏，随便抖动...",image:"./images/p2452241358.jpg",by:"小菊千袋子",from:""},
+			]
+		}
+	});
+	</script>
+</body>
+</html>

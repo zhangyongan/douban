@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>小组 - 豆瓣</title>
+	<link rel="stylesheet" href="./css/index.css">
+	<meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+	<script src="./js/vue.js"></script>
+</head>
+<body>
+
+	<div class="topnav">
+		<div class="topnav-primary">
+			<a href="./index.html">
+				<h1>豆瓣</h1>
+			</a>
+			<nav>
+				<ul>
+					<li><a style="color:#2384E8;" href="">电影</a></li>
+					<li><a style="color:#9F7860;" href="">图书</a></li>
+					<li><a style="color:#E4A813;" href="">广播</a></li>
+					<li><a style="color:#2AB8CC;" href="./group.html">小组</a></li>
+				</ul>
+				<span></span>
+			</nav>
+		</div>
+	</div>
+	<div id="page"> 
+		<template v-for="item in groups">
+			<div class="group-category">
+				<h3>{{item.category}}</h3>
+				<a href="" class="group-single" v-for="ite in item.value">
+
+					<div class="group-meta">
+						<img class="group-icon" v-bind:src="ite.icon" alt="">
+						<h2 class="group-name">{{ite.name}}</h2>
+						<span class="group-member">{{ite.member}}人</span>
+					</div>
+					<div class="group-topic">
+						<time v-bind:datetime="ite.lastTopicTime">3分钟前更新：</time>
+						<span>{{ite.lastTopicTitle}}</span>
+					</div>
+				</a>
+			</div>
+			<div class="more-group"><a href="">更多相关小组</a></div>
+		</template>
+	</div>
+	<script>
+		var page = new Vue({
+			el:"#page",
+			data:{
+				groups:[
+					{
+						category:"租房找室友",
+						value:[
+							{icon:"https://img3.doubanio.com/icon/g259227-2.jpg",name:"北京租房",member:"13",lastTopicTime:"2017-05-10 16:19:34",lastTopicTitle:"2号线东昌路站，东园一村，双南两房，可落户备案，5800"},
+							{icon:"https://img3.doubanio.com/icon/g276176-1.jpg",name:"北京出租房(请自觉统一)",member:"13",lastTopic:"2017-05-10 16:22:17",lastTopicTitle:"天啊噜，徐家汇，漕河泾上班首选，9号线{佘山站}，只要1500，"},
+							{icon:"https://img3.doubanio.com/icon/g232413-3.jpg",name:"上海租房",member:"132533",lastTopic:"2017-05-10 16:20:30",lastTopicTitle:"【龙华线-白石龙站】整租+一室一厅+2331元+鑫茂公寓"}
+						]
+					},
+					{
+						category:"来聊五块钱",
+						value:[
+							{icon:"https://img3.doubanio.com/icon/g80646-3.jpg",name:"Anti-Parents 父母皆祸害",member:"123204",lastTopicTime:"2017-05-10 23:17:14",lastTopicTitle:"小白菜们，别伤心！你们要努力！"},
+							{icon:"https://img3.doubanio.com/icon/g13003-1.jpg",name:"研究生們：只身打马过草原",member:"94068",lastTopicTime:"2017-05-10 23:19:14",lastTopicTitle:"华东师范大学17年教育学原理第一名311教育综合248分学姐考研经验分享"},
+							{icon:"https://img3.doubanio.com/icon/g64992-1.jpg",name:"循环性情绪低落症侯群",member:"217080",lastTopicTime:"2017-05-10 23:27:32",lastTopicTitle:"帝都，低落。。。她在哪"}
+						]
+					}
+				]
+			}
+		})
+	</script>
+	
+</body>
+</html>

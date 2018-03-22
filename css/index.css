@@ -1,0 +1,1159 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	position: relative;
+}
+a{
+	text-decoration: none;
+}
+.topnav{
+	position: fixed;
+	width: 100%;
+	background-color: #fff;
+	top: 0;
+}
+.topnav-primary{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	align-items:center;
+	padding: 0 18px;
+	height: 47px;
+	box-sizing:border-box;
+	border-bottom: 1px solid #ededed;
+}
+.topnav-primary h1{
+	background: url("../images/doubanh1.png") no-repeat;
+	font-size: 0;
+	background-size: cover;
+	width: 46px;
+	height: 22px;
+}
+.topnav-primary>*{
+	white-space: nowrap;
+}
+.topnav-primary nav>*{
+	vertical-align: middle;
+	display: inline-block;
+}
+.topnav-primary li{
+	display: inline-block;
+	margin-right: 20px;
+	font-size: 15px;
+}
+.topnav-primary nav span{
+	background:url("../images/searchlogo.png") no-repeat;
+	font-size: 0;
+	background-size: cover;
+	
+	width: 27px;
+	height: 20px;
+}
+
+
+#page{
+	margin-top: 47px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 650px;
+}
+#page nav{
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 80px;
+}
+#page nav a{
+	height: 40px;
+	line-height: 40px;
+	width: 40%;
+	text-align: center;
+	font-size: 15px;
+	color: #494949;
+	background-color: #f6f6f6;
+	margin-bottom: 3px;
+	margin-right: 3px;
+}
+
+#section{
+	margin-top: 30px;
+}
+#section a{
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	margin: 0 3%;
+	margin-bottom: 30px;
+}
+.section-summary{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	margin-bottom: 10px;
+}
+.section-summary h3{
+	font-size: 17px;
+	font-weight: normal;
+	margin-bottom: 3px;
+	color: #494949;
+	word-break: break-all;
+}
+.section-summary p{
+	color: #aaa;
+	font-size: 12px;
+	display: -webkit-box;
+	word-break: break-all;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+}
+.section-img{
+	width:25%;
+	height:86px;
+}
+.section-author{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	font-size: 12px;
+	color: #aaa;
+}
+
+/*
+	group.html
+ */
+.group-category{
+	margin-left: 5%;
+}
+.group-category h3{
+	font-size: 18px;
+	color: #111;
+	font-weight: normal;
+}
+.group-topic{
+	font-size: 15px;
+	color: #ccc;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding-bottom: 10px;
+	border-bottom:1px solid #e8e8e8;
+}
+.group-single{
+	color: #000;
+	display:block;
+	padding-right: 18px;
+}
+.group-meta{
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	padding-top: 13px;
+}
+.group-icon{
+	border:1px solid #f1f1f1;
+	width: 40px;
+	height: 40px;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+.group-meta .group-name{
+	flex: 1;
+	-webkit-flex: 1;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-weight: normal;
+	font-size: 19px;
+}
+.group-member{
+	color: #cccccc;
+}
+.more-group{
+	margin-left: 5%;
+	padding: 12px 0;
+	text-align: center;
+	border-bottom:1px solid #e8e8e8;
+	margin-bottom: 30px;
+}
+.more-group a{
+	text-decoration: none;
+	color: #42bd56;
+}
+
+/*
+	groupDetail
+ */
+.download-banner{
+	margin-top: 47px;
+	background: url(https://img3.doubanio.com/f/talion/fbcb08987a36258354c6037211d94286bef9716c/pics/card/promotion_bg.jpg) no-repeat;
+	background-size: cover;
+	height: 80px;
+	padding-left: 18px;
+}
+.banner-inner {
+	display: flex;
+	display: -webkit-flex;
+	align-items:center;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+}
+.banner-inner div:nth-child(1) span{
+    color: #2CA532;
+	font-size: 14px;
+	line-height: 23px;
+}
+.banner-inner div:nth-child(2) {
+	margin-right: 5px;
+}
+.banner-inner div:nth-child(2) a:nth-child(1){
+	background:#42bd56;
+	color: #fff;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 3px;
+	font-size: 13px;
+	font-weight: bold;
+}
+.banner-inner div:nth-child(2) a:nth-child(2){
+	color: #42bd56;
+	border: 1px solid #42bd56;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 3px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.group-banner{
+	background: rgb(81, 121, 193);
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	align-items:center;
+	padding: 35px 0;
+	color: #fff;
+}
+.group-banner h1{
+	font-size: 24px;
+	line-height: 1.2;
+	font-weight: 500;
+}
+.group-banner h1 img{
+	width: 24px;
+	height: 24px;
+	border: 1px solid #fff;
+	margin-right: 8px;
+}
+
+.group-banner-members{
+	margin: 15px 0 20px;
+	font-size: 12px;
+	line-height: 1;
+}
+.group-banner-operations span{
+	border: 1px solid #fff;
+	padding:8px 20px;
+	border-radius: 4px;
+	font-size: 15px;
+	line-height: 1;
+}
+.groupdetail-topics{
+	
+}
+.groupdetail-topic{
+	margin: 30px 15px 0px 15px;
+	display: block;
+	color: #000000;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #E8E8E8;
+}
+.groupdetail-topic-summary{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+}
+.groupdetail-topic-summary h3{
+	font-size: 17px;
+	font-weight: normal;
+	margin-bottom: 3px;
+	color: #494949;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+	flex: 1;
+	-webkit-flex: 1;
+}
+.groupdetail-topic-icon{
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.groupdetail-topic-image{
+	width: 40px;
+	height: 40px;
+}
+.topic-response{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	margin-top: 5px;
+	margin-left: 26px;
+}
+.topic-response span:nth-child(1){
+	color: #aaa;
+	font-size: 14px;
+	line-height: 1;
+}
+.topic-response span:nth-child(2){
+	color: #aaa;
+	font-size: 12px;
+	line-height: 1;
+	font-weight: bold;
+}
+
+.pagination{
+	margin: 30px 0;
+}
+.current-page-num{
+	text-align: center;
+	vertical-align: middle;
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+.pagination div{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+}
+.pagination div a{
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background: #F2F2F2;
+	width: 40%;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	vertical-align: middle;
+	padding: 1px;
+	color: #000000;
+}
+
+.pagination div a:nth-child(1){
+	margin-right: 5px;
+}
+.pagination div a:nth-child(2){
+	margin-left: 5px;
+}
+
+.footer{
+	margin-top: 50px;
+	margin-bottom: 15px;
+	font-size: 15px;
+	text-algin:center;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+}
+.footer strong{
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: normal;
+}
+.footer p{
+	line-height: 20px;
+}
+.footer img{
+	width: 48px;
+	height: 48px;
+	margin-right: 15px;
+}
+.footer-link{
+	display: block;
+	color: #42bd56;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+/*
+	topicDetail
+ */
+.ref{
+	display: flex;
+	display: -webkit-flex;
+	padding: 9px 18px;
+	padding-left: 0px;
+	border-bottom: 1px solid #ccc;
+	line-height: 24px;
+}
+
+.ref img{
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
+	margin-left: 20px;
+}
+.ref span{
+	margin-right: 3px;
+}
+.ref span:nth-child(2){
+	margin-right: 10px;
+	color: #42bd56;
+}
+.ref span:nth-child(3){
+	color: #b4b4b4;
+	vertical-align: bottom;
+}
+.topicdetail{
+	margin-top: 35px;
+	margin-left: 12px;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+}
+.topicdetail>h1{
+	font-size: 24px;
+	line-height: 32px;
+	word-break: break-all;
+	overflow: hidden;
+	font-weight: normal;
+	margin-right: 10px;
+}
+.topic-userinfo{
+	margin: 15px 0;
+}
+.topic-userinfo span:nth-child(2){
+	color:#ccc;
+}
+.share-button{
+	display: flex;
+	display: -webkit-flex;
+}
+.share-button div{
+	margin-right: 15px;
+	margin-bottom: 20px;
+}
+.icon{
+	width: 32px;
+	height: 32px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.wechat{
+	background-image: url(https://img3.doubanio.com/f/talion/db2bb63894e51a2fd6d6ccce27a4d90f72475fe8/pics/card/share/ic_wechat.png);
+}
+.qq{
+	background-image: url(https://img3.doubanio.com/f/talion/d8fd33d65b3207374091160b74e51e8f822525f9/pics/card/share/ic_qq.png);
+}
+.weibo{
+	background-image: url(https://img3.doubanio.com/f/talion/307cb338af08893636f31d7c2a9303403805981d/pics/card/share/ic_weibo.png);
+}
+.more{
+	background-image: url(https://img3.doubanio.com/f/talion/964b6037e76fbd97c2bda8f267451abd08739d92/pics/card/share/ic_more.png);
+}
+.topicdetail-content{
+	font-size: 18px;
+    line-height: 30px;
+    color: #494949;
+    word-wrap: break-word;
+}
+.topicdetail-img{
+	margin: 20px 10px;
+	text-align: center;
+}
+.topicdetail-img img{
+    display: block;
+    max-width: 100%;
+    margin:auto;
+}
+
+.note-like-button{
+	display: block;
+	margin: 30px auto 40px;
+	border: 1px solid #42bd56;
+	border-radius: 4px;
+	color: #42bd56;
+	background-color: #ffffff;
+	text-align: center;
+	width: 111px;
+}
+.note-like-button span{
+	font-size: 18px;
+	line-height: 24px;
+	background: url(https://img3.doubanio.com/f/talion/5ebc5b995463b28364f4a80a967f6fc7ffcd1cfd/pics/card/ic_like@2x.png) no-repeat;
+	padding-left: 28px;
+	background-size: 18px;
+	background-position: 8px 2px;
+}
+.tags{
+	margin-bottom: 30px;
+}
+.tags p{
+	font-size: 15px;
+	color: #aaa;
+}
+.tags div a{
+	font-size: 15px;
+	line-height: 25px;
+	border-radius: 25px; 
+	color: #494949;
+	background: #f5f5f5;
+	padding: 2px 12px;
+	margin-top: 10px;
+	text-align: center;
+	display: inline-block;
+}
+.topicdetail-response{
+	margin-bottom: 10px;
+}
+.topicdetail-response header{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+.topicdetail-response header h4{
+	font-weight: normal;
+	color: #aaa;
+}
+.topicdetail-response a{
+	color: #42bd56;
+	margin-right: 15px;
+}
+.response-item{
+	display: flex;
+	display: -webkit-flex;
+}
+.response-item img{
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+}
+.response-item div{
+	width: 100%;
+}
+.response-item div h1{
+	font-size: 15px;
+	padding-bottom: 6px;
+	font-weight: normal;
+}
+.response-item div time{
+	font-size: 12px;
+	color: #AAAAAA;
+}
+.response-item div p{
+	margin-top: 10px;
+    font-size: 15px;
+    line-height: 1.47;
+    color: #494949;
+    word-wrap: break-word;
+}
+.response-tool {
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+}
+.response-tool a{
+	float: left;
+    color: #cccccc;
+    font-size: 14px;
+    padding: 8px 25px 8px 25px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 2px 6px;
+}
+.response-tool a:nth-child(1){
+	background-image: url(https://img3.doubanio.com/f/talion/c7e37f56f26364d45c5857132328fea909f4360e/pics/card/ic_rec@2x.png);
+}
+.response-tool a:nth-child(2){
+	flex: 1;
+	-webkit-flex: 1;
+	background-image: url(https://img3.doubanio.com/f/talion/746d4fc6ebc2850de11f241e805aa52d4a28731a/pics/card/comment@2x.png);
+}
+.response-tool a:nth-child(3){
+	padding-right: 0;
+	margin-right: 0;
+	background-image: url(https://img3.doubanio.com/f/talion/f62af019f70451ad05c832ba7c81e91a91385ce6/pics/card/more-action@2x.png);
+}
+.go-href{
+	text-align: center;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    line-height: 18px;
+    padding: 15px 18px 15px 0;
+    display: block;
+    font-size: 16px;
+    color: #42bd56;
+}
+.advertisement{
+	margin-bottom: 5px;
+	margin-right: 10px;
+}
+.advertisement img{
+	width: 100%;
+	height: 85px;
+}
+
+
+
+/*
+	login
+ */
+
+.login-wrapper{
+
+}
+
+.login-wrapper h1{
+	background: #fff;
+    height: 45px;
+    border-bottom: 1px solid #eee;
+    padding: 0 18px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 45px;
+}
+.login-wrapper h1 a{
+    color: #42bd56;
+    font-size: 15px;
+    font-weight: normal;
+    position: absolute;
+    left: 18px;
+    top: 0;
+}
+.mobile-accounts{
+	padding: 15px;
+}
+.form-element strong {
+    font-size: 15px;
+    color: #222;
+    display: none;
+    margin-bottom: 5px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+.form-element.form-element-first{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-top: 1px solid #ccc;
+}
+.form-element input[type="text"], .form-element input[type="password"]{
+    display: inline-block;
+    height: 44px;
+    font-size: 15px;
+    margin: 0;
+    padding: 0 8px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    border-top: 0;
+    width: 100%;
+    line-height: 32px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-element.submit-button {
+    margin-top: 10px;
+    text-align: center;
+}
+.form-element .btn-submit {
+    cursor: pointer;
+    font-size: 17px;
+    text-align: center;
+    width: 100%;
+    padding: 10px 26px;
+    color: #ffffff;
+    background: #17AA52;
+    border: 1px solid #17AA52;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.form-element span.openpwd {
+    display: block;
+    height: 100%;
+    width: 32px;
+    position: absolute;
+    right: 15px;
+    top: -90px;
+    background-image: url(https://img3.doubanio.com/f/accounts/633583c94aee074deb5da23c5bd2babc796569ac/pics/douban_mobile/ic_pwd_privarie@2x.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 22px;
+    z-index: 5;
+}
+.more-login{
+
+}
+.more-login-btn{
+    font-size: 15px;
+    margin-top: 15px;
+    color: #aaa;
+    text-align: center;
+}
+.btn-wrapper{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 15px;
+    color: #42bd56;
+}
+.btn-wrapper .btn:first-child {
+    margin-left: 0;
+    color: #42bd56;
+}
+
+
+html, body, .page{
+	height: 100%;
+}
+.page {
+    padding-top: 47px;
+    max-width: 650px;
+    background: #fff;
+    margin: 0 auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+}
+/*
+	mine.html
+ */
+.mine-base-info{
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	justify-content: center;
+	height: 140px;
+	color: #ffffff;
+    background: rgba(0,0,0,0.5) no-repeat center/cover;
+}
+.mine-base-info div{
+	width: 100%;
+}
+.mine-base-info img{
+	margin: 0 10px;
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+}
+.mine-base-info h1{
+	font-size: 16px;
+	font-weight: normal;
+}
+.mine-base-info span{
+	font-size: 12px;
+}
+.mine-info-link{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 2px;
+}
+.mine-info-link p{
+	font-size: 12px;
+}
+.mine-info-link a{
+	font-size: 13px;
+	color: #ffffff;
+}
+.collection {
+    font-size: 0;
+    background: #fff;
+}
+.collection .item {
+    display: inline-block;
+    width: 24.99%;
+    height: 100px;
+    text-align: center;
+}
+.collection .item a {
+    font-size: 13px;
+    color: #9b9b9b;
+}
+.collection .item img {
+    display: block;
+    margin: 30px auto 10px;
+    width: 26px;
+    height: 26px;
+}
+
+
+
+
+/*	
+	people.html
+*/
+.people-profile{
+	background-color: #ffffff;
+}
+.people-profile .people-banner{
+	background-image: url(https://img3.doubanio.com/f/talion/f2221edbbd29ec8e8b83f26384febcc1355de2af/pics/card/bg_default_profile_grn.png);
+	background-size: cover;
+	display:flex;
+	display:-webkit-flex;
+	justify-content: center;
+	align-items: center;
+	height: 160px;
+}
+.people-profile .people-banner img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+.people-profile .people-info{
+	margin-left: 10px;
+	margin-top: 18px;
+    padding-bottom: 15px;
+}
+.people-profile .people-info .people-card{
+	display:flex;
+	display:-webkit-flex;
+	align-items: center;
+}
+.people-profile .people-info .people-card h1{
+    font-size: 19px;
+    color: #494949;
+    font-weight: normal;
+}
+.people-profile .people-info .people-card .gender.man{
+	background-image:url(https://img3.doubanio.com/f/talion/95a57160a10807da4a64c37ad16c6f763a324be1/pics/card/people_male.png)
+}
+.gender{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin-left: 3px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.people-info p{
+	font-size: 13px;
+    color: #9b9b9b;
+    line-height: 1.5;
+}
+.people-profile .intro {
+    display:flex;
+	display:-webkit-flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.people-profile .intro p{
+	display: block;
+    margin-top: 10px;
+    line-height: 1.23;
+    font-size: 13px;
+    color: #4a4a4a;
+    padding-right: 30px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.people-profile .intro span{
+	width: 20px;
+	height: 20px;
+	background-image: url(https://img3.doubanio.com/f/talion/2a5778b0e5608c876c3e16b7ea093e358d236c82/pics/card/open.png);
+	background-size: cover;
+	margin-right: 10px;
+}
+.people-profile .profile-nav {
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    margin: 0 -18px;
+    padding-left: 18px;
+    padding-left: 8px;
+}
+.people-profile .profile-nav .item {
+    display: inline-block;
+    padding: 18px 0;
+    text-align: center;
+    width: 21.8%;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.people-profile .profile-nav .item .count {
+    font-size: 17px;
+    color: #4a4a4a;
+    font-weight: bold;
+}
+.people-profile .profile-nav .item .text {
+    margin-top: 2px;
+    font-size: 11px;
+    color: #9b9b9b;
+    line-height: 1.27;
+}
+.life-stream{
+
+}
+.life-stream section{
+    background-color: #fff;
+    margin: 0 -18px;
+    margin-bottom: 15px;
+    padding: 0 18px;
+}
+.life-stream section h2{
+	display: block;
+    background-color: #f5f5f5;
+    text-align: center;
+    height: 44px;
+    line-height: 44px;
+    font-size: 14px;
+    color: #aaa;
+}
+.life-stream section .list{
+	padding: 15px 18px 15px 10px;
+	
+}
+.life-stream section .list .info{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+    font-size: 14px;
+    color: #aaa;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.life-stream section .summary{
+	padding: 15px;
+	border: 1px solid #aaa;
+}
+.life-stream section .summary .title{
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #494949;
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.life-stream section .summary .content{
+	display: flex;
+	display: -webkit-flex;
+	justify-content:space-between;
+}
+.life-stream section .summary .content .text{
+    font-size: 12px;
+    line-height: 16px;
+    color: #aaa;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    width: 75%;
+}
+.life-stream section .summary .content .photo{
+    width: 75px;
+    height: 48px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+}
+.load-more{
+	color: #42bd56;
+    display: block;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 1;
+    margin: 30px 18px 30px 0;
+    padding-bottom: 30px;
+}
+
+.introduce-detail{
+	display: none;
+}
+.intro-nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 44px;
+    width: 100%;
+    padding: 14px 0;
+    box-sizing: border-box;
+    font-size: 17px;
+    line-height: 17px;
+    background: #fff;
+    z-index: 999;
+}
+.intro-nav .nav-close-left{
+	float:left;
+    color: #42bd56;
+    cursor: pointer;
+    position: relative;
+    padding: 14px 18px;
+    margin: -14px 0;
+}
+.intro-nav .title{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: inherit;
+    text-align: center;
+}
+.intro-content .container{
+	background-color: transparent;	
+	background-image: url(https://img3.doubanio.com/f/talion/f2221edbbd29ec8e8b83f26384febcc1355de2af/pics/card/bg_default_profile_grn.png);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    padding: 70px 24px 100px;
+}
+.intro-content .container .mask{
+	background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.intro-content .intro-header{
+	text-align: center;
+}
+.intro-content .intro-header h1{
+	color: #ffffff;
+	font-size: 17px;
+    margin: 0;
+    line-height: 1.3;
+}
+.intro-content .intro-header .info{
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 1.18;
+    color: rgba(255,255,255,0.5);
+    text-shadow: 0 1px 0 rgba(0,0,0,0.23);
+}
+.intro-content .intro-text{
+	color: #ffffff;
+}
+
+
+
+/*
+	GroupLogined
+ */
+.page{
+    padding-top: 47px;
+    max-width: 650px;
+    background: #fff;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+.card{
+	margin:0 18px;
+}
+.logined-image-banner{
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: 30px 0;
+    -webkit-overflow-scrolling: touch;
+}
+.logined-image-banner .item{
+	width: 190px;
+    height: 80px;
+    display: inline-block;
+}
+.logined-image-banner .item img{
+	width: 190px;
+    height: 80px;
+    display: inline-block;
+}
+.page nav{
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+.page nav a{
+	height: 50px;
+	line-height: 50px;
+	width: 49%;
+	text-align: center;
+	font-size: 15px;
+	color: #494949;
+	background-color: #f6f6f6;
+	margin-bottom: 3px;
+	margin-right: 3px;
+}
+.my-group{
+	margin-top: 40px;
+}
+.my-group h2{
+    color: #aaa;
+    margin: 0 0 15px;
+    font-size: 15px;
+    font-weight: normal;
+}
+.my-group .list{
+    list-style: none;
+    margin-right: -18px;
+}
+.my-group .list li{
+    cursor: pointer;
+    padding: 15px 18px 15px 0;
+    border-top: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+}
+.my-group .list li a{
+	color: #42bd56;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	vertical-align: middle;
+}
+.my-group .list li a img{
+	width: 36px;
+    height: 36px;
+    float: left;
+    margin-right: 10px;
+}
+.my-group .list li a h1{
+	font-size: 17px;
+	color: #000000;
+	font-weight: normal;
+}
